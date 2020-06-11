@@ -1,26 +1,63 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Message } from "./Message"
+
 import './App.css';
+// import { BrowserRouter, Route } from 'react-router-dom';
+
+
+
+// type MessageType = {
+//   message: string
+// }
+
+
+
+
+
+// function HelloMessage(props: MessageType) {
+//   return (
+//     <div>
+//       Hello!!!
+//     </div>
+//   )
+// }
+
+// const ByeMessage: React.FC<MessageType> = () => {
+//   return (
+//     <div>
+//       Bye!!!
+//     </div>
+//   )
+// }
+
+
+
+
+
 
 function App() {
+
+
+  // Ishodnye dannye
+  let messages = [
+    { id: 1, text: "Hello" },
+    { id: 1, text: "How are you?" },
+    { id: 1, text: "I am fine" },
+    { id: 1, text: "Schiki-Miki" },
+  ];
+
+  // preobrayovenie map, elementy massiva preobrazovyvutsja v Componenty Message
+  let messagesElements = messages.map(m => <Message text={m.text} />);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {messagesElements}
     </div>
   );
 }
+
+
+
+
 
 export default App;
