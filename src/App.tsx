@@ -2,38 +2,6 @@ import React from 'react';
 import { Message } from "./Message"
 
 import './App.css';
-// import { BrowserRouter, Route } from 'react-router-dom';
-
-
-
-// type MessageType = {
-//   message: string
-// }
-
-
-
-
-
-// function HelloMessage(props: MessageType) {
-//   return (
-//     <div>
-//       Hello!!!
-//     </div>
-//   )
-// }
-
-// const ByeMessage: React.FC<MessageType> = () => {
-//   return (
-//     <div>
-//       Bye!!!
-//     </div>
-//   )
-// }
-
-
-
-
-
 
 function App() {
 
@@ -55,9 +23,5 @@ function App() {
     </div>
   );
 }
-
-
-
-
 
 export default App;
